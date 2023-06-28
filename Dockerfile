@@ -41,6 +41,13 @@ RUN cd /home && \
     mv packagesart/* . && \
     rm -rf packagesart
 
+# Download, compile, and install the RaspberryPiMouse driver
+RUN cd /home/workspaces_art/pimouse/src && \
+    git clone https://github.com/rt-net/RaspberryPiMouse.git && \
+    cd RaspberryPiMouse/src/driver && \
+    make && \
+    make install
+
 # Set working directory
 WORKDIR /home/workspaces_art/pimouse
 
