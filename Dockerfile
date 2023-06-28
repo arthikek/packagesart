@@ -34,16 +34,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN mkdir -p /home/workspaces_art/pimouse/src
 
 # Copy your repository into the Docker image
-COPY packagesart /home/workspaces_art/pimouse/src
+COPY . /home/workspaces_art/pimouse/src
 
 
 
 # Download, compile, and install the RaspberryPiMouse driver
-RUN cd /home/workspaces_art/pimouse/src && \
-    git clone https://github.com/rt-net/RaspberryPiMouse.git && \
-    cd RaspberryPiMouse/src/driver && \
-    make && \
-    make install
+RUN  cd /home/workspaces_art/pimouse/src && git clone https://github.com/rt-net/RaspberryPiMouse.git 
+RUN cd /home/workspaces_art/pimouse/src/RaspberryPiMouse/utils && \
+    apt-get update && \
+    apt-get install -y --no-install-recommends \
+    raspberrypi-kernel-headers build-essential && \
+    ./build_install.bash
 
 # Set working directory
 WORKDIR /home/workspaces_art/pimouse
