@@ -30,16 +30,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Clone additional repository and copy contents to /home/workspaces_art/pimouse/src/
-RUN cd /home && \
-    mkdir workspaces_art && \
-    cd workspaces_art && \
-    mkdir pimouse && \
-    cd pimouse && \
-    mkdir src && \
-    cd src && \
-    git clone https://github.com/pullipaal/packagesart.git && \
-    mv packagesart/* . && \
-    rm -rf packagesart
+# Create necessary directories
+RUN mkdir -p /home/workspaces_art/pimouse/src
+
+# Copy your repository into the Docker image
+COPY packagesart /home/workspaces_art/pimouse/src
+
+
 
 # Download, compile, and install the RaspberryPiMouse driver
 RUN cd /home/workspaces_art/pimouse/src && \
