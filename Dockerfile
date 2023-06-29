@@ -42,8 +42,8 @@ COPY . /home/workspaces_art/pimouse/src
 RUN  cd /home/workspaces_art/pimouse/src && git clone https://github.com/rt-net/RaspberryPiMouse.git 
 RUN cd /home/workspaces_art/pimouse/src/RaspberryPiMouse/utils && \
     apt-get update && \
-    apt-get install -y --no-install-recommends \
-    raspberrypi-kernel-headers build-essential && \
+    apt-get install -y --no-install-recommends &&\
+    apt install -y --no-install-recommends linux-headers-$(uname -r) build-essential && \
     ./build_install.bash
 
 # Set working directory
