@@ -1,1 +1,0 @@
-/home/arthike/workspaces/pimouse_start/src/raspimouse/models/launch/gazebo.launch.py

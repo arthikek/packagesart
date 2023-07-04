@@ -1,4 +1,0 @@
-/home/arthike/workspaces/pimouse_start/src/install/raspimouse/lib/libraspimouse_component.so
-/home/arthike/workspaces/pimouse_start/src/install/raspimouse/bin/keyboard_controller
-/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/cmake/export_raspimouse_componentExport.cmake
-/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/cmake/export_raspimouse_componentExport-relwithdebinfo.cmake

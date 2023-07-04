@@ -1,4 +1,0 @@
-Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs -- -j7 -l7
-Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs -- -j7 -l7
-Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs
-Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs

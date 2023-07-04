@@ -1,1 +1,0 @@
-/home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake
