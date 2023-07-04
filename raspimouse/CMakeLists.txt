@@ -21,6 +21,7 @@ find_package(nav_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(raspimouse_msgs REQUIRED)
+find_package(ros_ign_gazebo REQUIRED)
 
 include_directories(include)
 
@@ -82,11 +83,9 @@ install(
   DESTINATION include
 )
 
-install(DIRECTORY
-  launch
-  config
-  DESTINATION share/${PROJECT_NAME}/
-)
+install(DIRECTORY launch  config DESTINATION share/${PROJECT_NAME}/)
+install(DIRECTORY worlds  config DESTINATION share/${PROJECT_NAME}/)
+install(DIRECTORY models  config DESTINATION share/${PROJECT_NAME}/)
 
 install(
   TARGETS 

@@ -1,0 +1,4 @@
+source;share/raspimouse/local_setup.bash
+source;share/raspimouse/local_setup.dsv
+source;share/raspimouse/local_setup.sh
+source;share/raspimouse/local_setup.zsh

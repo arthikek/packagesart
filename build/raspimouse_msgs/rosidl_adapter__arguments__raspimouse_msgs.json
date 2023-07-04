@@ -1,0 +1,8 @@
+{
+  "package_name": "raspimouse_msgs",
+  "non_idl_tuples": [
+    "/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs:msg/Leds.msg",
+    "/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs:msg/Switches.msg",
+    "/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs:msg/LightSensors.msg"
+  ]
+}

@@ -1,0 +1,68 @@
+[0.095s] Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/arthike/workspaces/pimouse_start/src/raspimouse_description -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description
+[0.198s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.002s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.101s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.787s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.948s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.965s] -- Added test 'lint_cmake' to check CMake code style
+[1.976s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.093s] -- Added test 'xmllint' to check XML markup files
+[2.102s] -- Configuring done
+[2.117s] -- Generating done
+[2.122s] -- Build files have been written to: /home/arthike/workspaces/pimouse_start/src/build/raspimouse_description
+[2.149s] Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/arthike/workspaces/pimouse_start/src/raspimouse_description -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description
+[2.152s] Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arthike/workspaces/pimouse_start/src/build/raspimouse_description -- -j7 -l7
+[2.515s] Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arthike/workspaces/pimouse_start/src/build/raspimouse_description -- -j7 -l7
+[2.817s] Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arthike/workspaces/pimouse_start/src/build/raspimouse_description
+[2.871s] -- Install configuration: "RelWithDebInfo"
+[2.875s] -- Execute custom install script
+[2.881s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//launch/config/urdf.rviz
+[2.974s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//launch/display.launch.py
+[3.037s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//launch/gazebo.launch.py
+[3.116s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/dae/body/raspimouse_body.dae
+[3.197s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/dae/body/raspimouse_top_plate.dae
+[3.279s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/dae/body/rt-logo.png
+[3.305s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/dae/sensor/urg_bottom_origin.dae
+[3.376s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/dae/sensor/urg_optical_axis_center_origin.dae
+[3.421s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/dae/wheel/raspimouse_wheel.dae
+[3.456s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/RasPiMouse_MultiLiDARMount.stl
+[3.492s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/RasPiMouse_TopPlate.stl
+[3.537s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/RasPiMouse_base-metric.stl
+[3.608s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/RasPiMouse_sensor-metric.stl
+[3.643s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/RasPiMouse_wheel-metric.stl
+[3.717s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/RasPiMouse_wheel-mm.stl
+[3.776s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/URG-04LX-UG01.stl
+[3.834s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/color/RasPiMouse_body_black.stl
+[3.921s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/color/RasPiMouse_body_gray.stl
+[3.988s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/color/RasPiMouse_body_green.stl
+[4.041s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/color/RasPiMouse_body_red.stl
+[4.110s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/color/RasPiMouse_wheel_black.stl
+[4.143s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/color/RasPiMouse_wheel_gray.stl
+[4.212s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//meshes/stl/robotis_lds01.stl
+[4.283s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//urdf/body/body.gazebo.xacro
+[4.353s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//urdf/body/body.urdf.xacro
+[4.440s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//urdf/body/option.urdf.xacro
+[4.508s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//urdf/common.xacro
+[4.557s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//urdf/raspimouse.urdf.xacro
+[4.604s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//urdf/sensors/lidar.gazebo.xacro
+[4.679s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//urdf/sensors/lidar.urdf.xacro
+[4.752s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//urdf/sensors/lightsens.gazebo.xacro
+[4.808s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//urdf/sensors/lightsens.urdf.xacro
+[4.889s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//urdf/wheel/diffdrive.gazebo.xacro
+[4.999s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description//urdf/wheel/wheel.urdf.xacro
+[5.069s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/ament_index/resource_index/package_run_dependencies/raspimouse_description
+[5.144s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/ament_index/resource_index/parent_prefix_path/raspimouse_description
+[5.199s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/environment/ament_prefix_path.sh
+[5.241s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/environment/ament_prefix_path.dsv
+[5.308s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/environment/path.sh
+[5.366s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/environment/path.dsv
+[5.418s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/local_setup.bash
+[5.489s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/local_setup.sh
+[5.577s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/local_setup.zsh
+[5.642s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/local_setup.dsv
+[5.720s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/package.dsv
+[5.812s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/ament_index/resource_index/packages/raspimouse_description
+[5.907s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/cmake/raspimouse_descriptionConfig.cmake
+[5.927s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/cmake/raspimouse_descriptionConfig-version.cmake
+[5.955s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/package.xml
+[6.064s] Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arthike/workspaces/pimouse_start/src/build/raspimouse_description

@@ -1,0 +1,6 @@
+msg/Leds.idl
+msg/Leds.msg
+msg/LightSensors.idl
+msg/LightSensors.msg
+msg/Switches.idl
+msg/Switches.msg

@@ -1,0 +1,1 @@
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description/ament_cmake_core/raspimouse_descriptionConfig-version.cmake

@@ -1,0 +1,280 @@
+[1.317s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--event-handlers', 'console_cohesion+', '--base-paths', '/home/arthike/workspaces/pimouse_start', '--cmake-args', '-DCMAKE_BUILD_TYPE=RelWithDebInfo']
+[1.317s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=7, event_handlers=['console_cohesion+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/arthike/workspaces/pimouse_start'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f8c3cf45390>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f8c3d74f2e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f8c3d74f2e0>>)
+[1.415s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.416s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/arthike/workspaces/pimouse_start'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extensions ['ignore', 'ignore_ament_install']
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extension 'ignore'
+[1.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extension 'ignore_ament_install'
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extensions ['colcon_pkg']
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extension 'colcon_pkg'
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extensions ['colcon_meta']
+[1.418s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extension 'colcon_meta'
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extensions ['ros']
+[1.419s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extension 'ros'
+[1.459s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extensions ['cmake', 'python']
+[1.459s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extension 'cmake'
+[1.459s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extension 'python'
+[1.460s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extensions ['python_setup_py']
+[1.460s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start) by extension 'python_setup_py'
+[1.460s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/build) by extensions ['ignore', 'ignore_ament_install']
+[1.461s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/build) by extension 'ignore'
+[1.461s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/build) ignored
+[1.461s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/install) by extensions ['ignore', 'ignore_ament_install']
+[1.462s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/install) by extension 'ignore'
+[1.462s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/install) ignored
+[1.463s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/log) by extensions ['ignore', 'ignore_ament_install']
+[1.463s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/log) by extension 'ignore'
+[1.463s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/log) ignored
+[1.464s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extensions ['ignore', 'ignore_ament_install']
+[1.464s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extension 'ignore'
+[1.464s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extension 'ignore_ament_install'
+[1.464s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extensions ['colcon_pkg']
+[1.464s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extension 'colcon_pkg'
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extensions ['colcon_meta']
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extension 'colcon_meta'
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extensions ['ros']
+[1.465s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extension 'ros'
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extensions ['cmake', 'python']
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extension 'cmake'
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extension 'python'
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extensions ['python_setup_py']
+[1.466s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src) by extension 'python_setup_py'
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/build) by extensions ['ignore', 'ignore_ament_install']
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/build) by extension 'ignore'
+[1.467s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/build) ignored
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/install) by extensions ['ignore', 'ignore_ament_install']
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/install) by extension 'ignore'
+[1.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/install) ignored
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/log) by extensions ['ignore', 'ignore_ament_install']
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/log) by extension 'ignore'
+[1.469s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/log) ignored
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse) by extensions ['ignore', 'ignore_ament_install']
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse) by extension 'ignore'
+[1.470s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse) by extension 'ignore_ament_install'
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse) by extensions ['colcon_pkg']
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse) by extension 'colcon_pkg'
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse) by extensions ['colcon_meta']
+[1.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse) by extension 'colcon_meta'
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse) by extensions ['ros']
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse) by extension 'ros'
+[1.480s] DEBUG:colcon.colcon_core.package_identification:Package '/home/arthike/workspaces/pimouse_start/src/raspimouse' with type 'ros.ament_cmake' and name 'raspimouse'
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_description) by extensions ['ignore', 'ignore_ament_install']
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_description) by extension 'ignore'
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_description) by extension 'ignore_ament_install'
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_description) by extensions ['colcon_pkg']
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_description) by extension 'colcon_pkg'
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_description) by extensions ['colcon_meta']
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_description) by extension 'colcon_meta'
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_description) by extensions ['ros']
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_description) by extension 'ros'
+[1.486s] DEBUG:colcon.colcon_core.package_identification:Package '/home/arthike/workspaces/pimouse_start/src/raspimouse_description' with type 'ros.catkin' and name 'raspimouse_description'
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs) by extension 'ignore'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs) by extension 'ignore_ament_install'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs) by extensions ['colcon_pkg']
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs) by extension 'colcon_pkg'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs) by extensions ['colcon_meta']
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs) by extension 'colcon_meta'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs) by extensions ['ros']
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs) by extension 'ros'
+[1.490s] DEBUG:colcon.colcon_core.package_identification:Package '/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs' with type 'ros.ament_cmake' and name 'raspimouse_msgs'
+[1.490s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.553s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.553s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.557s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/arthike/workspaces/pimouse_start/install
+[1.565s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 305 installed packages in /opt/ros/humble
+[1.570s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.776s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_description' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo']'
+[1.776s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_description' build argument 'cmake_target' from command line to 'None'
+[1.777s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.777s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.777s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.777s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.777s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.777s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.777s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.778s] DEBUG:colcon.colcon_core.verb:Building package 'raspimouse_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description', 'merge_install': False, 'path': '/home/arthike/workspaces/pimouse_start/src/raspimouse_description', 'symlink_install': True, 'test_result_base': None}
+[1.780s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_msgs' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo']'
+[1.780s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_msgs' build argument 'cmake_target' from command line to 'None'
+[1.780s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.780s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.781s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.781s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.781s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.781s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.781s] Level 5:colcon.colcon_core.verb:set package 'raspimouse_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.781s] DEBUG:colcon.colcon_core.verb:Building package 'raspimouse_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs', 'merge_install': False, 'path': '/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs', 'symlink_install': True, 'test_result_base': None}
+[1.783s] Level 5:colcon.colcon_core.verb:set package 'raspimouse' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo']'
+[1.783s] Level 5:colcon.colcon_core.verb:set package 'raspimouse' build argument 'cmake_target' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'raspimouse' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'raspimouse' build argument 'cmake_clean_cache' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'raspimouse' build argument 'cmake_clean_first' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'raspimouse' build argument 'cmake_force_configure' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'raspimouse' build argument 'ament_cmake_args' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'raspimouse' build argument 'catkin_cmake_args' from command line to 'None'
+[1.785s] Level 5:colcon.colcon_core.verb:set package 'raspimouse' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.785s] DEBUG:colcon.colcon_core.verb:Building package 'raspimouse' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/arthike/workspaces/pimouse_start/src/build/raspimouse', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/arthike/workspaces/pimouse_start/src/install/raspimouse', 'merge_install': False, 'path': '/home/arthike/workspaces/pimouse_start/src/raspimouse', 'symlink_install': True, 'test_result_base': None}
+[1.786s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.792s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.793s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs' with build type 'ament_cmake'
+[1.794s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/arthike/workspaces/pimouse_start/src/raspimouse_msgs'
+[1.810s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.811s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.811s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.865s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/arthike/workspaces/pimouse_start/src/raspimouse_description' with build type 'catkin'
+[1.866s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/arthike/workspaces/pimouse_start/src/raspimouse_description'
+[1.868s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.868s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs -- -j7 -l7
+[2.017s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description': /usr/bin/cmake /home/arthike/workspaces/pimouse_start/src/raspimouse_description -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description
+[4.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs -- -j7 -l7
+[5.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs
+[6.555s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raspimouse_msgs)
+[6.569s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs
+[6.583s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs' for CMake module files
+[6.587s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs' for CMake config files
+[6.594s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse_msgs', 'cmake_prefix_path')
+[6.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/cmake_prefix_path.ps1'
+[6.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/cmake_prefix_path.dsv'
+[6.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/cmake_prefix_path.sh'
+[6.619s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib'
+[6.621s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse_msgs', 'ld_library_path_lib')
+[6.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/ld_library_path_lib.ps1'
+[6.630s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/ld_library_path_lib.dsv'
+[6.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/ld_library_path_lib.sh'
+[6.640s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/bin'
+[6.641s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib/pkgconfig/raspimouse_msgs.pc'
+[6.643s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib/python3.10/site-packages'
+[6.644s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/bin'
+[6.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/package.ps1'
+[6.654s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/package.dsv'
+[6.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/package.sh'
+[6.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/package.bash'
+[6.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/package.zsh'
+[6.666s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/colcon-core/packages/raspimouse_msgs)
+[8.390s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raspimouse_msgs)
+[8.397s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs' for CMake module files
+[8.407s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs' for CMake config files
+[8.416s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse_msgs', 'cmake_prefix_path')
+[8.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/cmake_prefix_path.ps1'
+[8.427s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/cmake_prefix_path.dsv'
+[8.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/cmake_prefix_path.sh'
+[8.444s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib'
+[8.446s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse_msgs', 'ld_library_path_lib')
+[8.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/ld_library_path_lib.ps1'
+[8.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/ld_library_path_lib.dsv'
+[8.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/hook/ld_library_path_lib.sh'
+[8.460s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/bin'
+[8.463s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib/pkgconfig/raspimouse_msgs.pc'
+[8.465s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib/python3.10/site-packages'
+[8.472s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/bin'
+[8.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/package.ps1'
+[8.478s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/package.dsv'
+[8.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/package.sh'
+[8.484s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/package.bash'
+[8.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/package.zsh'
+[8.488s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/colcon-core/packages/raspimouse_msgs)
+[8.497s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/arthike/workspaces/pimouse_start/src/raspimouse' with build type 'ament_cmake'
+[8.499s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/arthike/workspaces/pimouse_start/src/raspimouse'
+[8.501s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.502s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse': AMENT_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:/home/arthike/workspaces/pimouse_start/install/raspimouse:/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/arthike/workspaces/pimouse_start/src/build/raspimouse -- -j7 -l7
+[9.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse' returned '0': AMENT_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:/home/arthike/workspaces/pimouse_start/install/raspimouse:/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/arthike/workspaces/pimouse_start/src/build/raspimouse -- -j7 -l7
+[10.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse': AMENT_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:/home/arthike/workspaces/pimouse_start/install/raspimouse:/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/arthike/workspaces/pimouse_start/src/build/raspimouse
+[10.329s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raspimouse)
+[10.333s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse' for CMake module files
+[10.334s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse' returned '0': AMENT_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:/home/arthike/workspaces/pimouse_start/install/raspimouse:/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/arthike/workspaces/pimouse_start/src/build/raspimouse
+[10.338s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse' for CMake config files
+[10.341s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse', 'cmake_prefix_path')
+[10.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/cmake_prefix_path.ps1'
+[10.345s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/cmake_prefix_path.dsv'
+[10.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/cmake_prefix_path.sh'
+[10.355s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/lib'
+[10.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse', 'ld_library_path_lib')
+[10.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/ld_library_path_lib.ps1'
+[10.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/ld_library_path_lib.dsv'
+[10.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/ld_library_path_lib.sh'
+[10.373s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/bin'
+[10.374s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse', 'path')
+[10.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/path.ps1'
+[10.380s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/path.dsv'
+[10.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/path.sh'
+[10.388s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/lib/pkgconfig/raspimouse.pc'
+[10.390s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/lib/python3.10/site-packages'
+[10.390s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/bin'
+[10.392s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse', 'pythonscriptspath')
+[10.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/pythonscriptspath.ps1'
+[10.397s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/pythonscriptspath.dsv'
+[10.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/pythonscriptspath.sh'
+[10.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.ps1'
+[10.405s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.dsv'
+[10.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.sh'
+[10.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.bash'
+[10.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.zsh'
+[10.418s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/colcon-core/packages/raspimouse)
+[10.910s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raspimouse)
+[10.915s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse' for CMake module files
+[10.918s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse' for CMake config files
+[10.921s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse', 'cmake_prefix_path')
+[10.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/cmake_prefix_path.ps1'
+[10.925s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/cmake_prefix_path.dsv'
+[10.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/cmake_prefix_path.sh'
+[10.933s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/lib'
+[10.934s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse', 'ld_library_path_lib')
+[10.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/ld_library_path_lib.ps1'
+[10.939s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/ld_library_path_lib.dsv'
+[10.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/ld_library_path_lib.sh'
+[10.948s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/bin'
+[10.949s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse', 'path')
+[10.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/path.ps1'
+[10.956s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/path.dsv'
+[10.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/path.sh'
+[10.963s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/lib/pkgconfig/raspimouse.pc'
+[10.965s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/lib/python3.10/site-packages'
+[10.966s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/bin'
+[10.967s] Level 1:colcon.colcon_core.shell:create_environment_hook('raspimouse', 'pythonscriptspath')
+[10.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/pythonscriptspath.ps1'
+[10.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/pythonscriptspath.dsv'
+[10.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/hook/pythonscriptspath.sh'
+[10.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.ps1'
+[10.979s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.dsv'
+[10.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.sh'
+[10.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.bash'
+[10.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.zsh'
+[10.987s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/colcon-core/packages/raspimouse)
+[12.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description' returned '1': /usr/bin/cmake /home/arthike/workspaces/pimouse_start/src/raspimouse_description -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description
+[12.480s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raspimouse_description)
+[12.486s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description' for CMake module files
+[12.487s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description' for CMake config files
+[12.488s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/bin'
+[12.488s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/lib/pkgconfig/raspimouse_description.pc'
+[12.489s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/lib/python3.10/site-packages'
+[12.489s] Level 1:colcon.colcon_core.environment:checking '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/bin'
+[12.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/package.ps1'
+[12.491s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/package.dsv'
+[12.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/package.sh'
+[12.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/package.bash'
+[12.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/raspimouse_description/package.zsh'
+[12.493s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description/share/colcon-core/packages/raspimouse_description)
+[12.505s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.508s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.509s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[12.509s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.533s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.534s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.535s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.620s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.622s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/arthike/workspaces/pimouse_start/src/install/local_setup.ps1'
+[12.625s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/arthike/workspaces/pimouse_start/src/install/_local_setup_util_ps1.py'
+[12.637s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/arthike/workspaces/pimouse_start/src/install/setup.ps1'
+[12.646s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/arthike/workspaces/pimouse_start/src/install/local_setup.sh'
+[12.647s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/arthike/workspaces/pimouse_start/src/install/_local_setup_util_sh.py'
+[12.648s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/arthike/workspaces/pimouse_start/src/install/setup.sh'
+[12.650s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/arthike/workspaces/pimouse_start/src/install/local_setup.bash'
+[12.654s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/arthike/workspaces/pimouse_start/src/install/setup.bash'
+[12.660s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/arthike/workspaces/pimouse_start/src/install/local_setup.zsh'
+[12.662s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/arthike/workspaces/pimouse_start/src/install/setup.zsh'

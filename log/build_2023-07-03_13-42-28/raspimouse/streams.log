@@ -1,0 +1,109 @@
+[0.095s] Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse': AMENT_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:/home/arthike/workspaces/pimouse_start/install/raspimouse:/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/arthike/workspaces/pimouse_start/src/raspimouse -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/arthike/workspaces/pimouse_start/src/install/raspimouse
+[0.525s] -- The C compiler identification is GNU 11.3.0
+[0.943s] -- The CXX compiler identification is GNU 11.3.0
+[0.978s] -- Detecting C compiler ABI info
+[1.691s] -- Detecting C compiler ABI info - done
+[1.711s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.713s] -- Detecting C compile features
+[1.718s] -- Detecting C compile features - done
+[1.745s] -- Detecting CXX compiler ABI info
+[2.627s] -- Detecting CXX compiler ABI info - done
+[2.647s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.649s] -- Detecting CXX compile features
+[2.652s] -- Detecting CXX compile features - done
+[2.674s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.665s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[4.048s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.380s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[4.739s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.800s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.835s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.894s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.060s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.712s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.746s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.639s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.799s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.988s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.119s] -- Looking for pthread.h
+[7.851s] -- Looking for pthread.h - found
+[7.867s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.671s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.677s] -- Found Threads: TRUE  
+[9.608s] -- Found rclcpp_lifecycle: 16.0.4 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[9.901s] -- Found rclcpp_components: 16.0.4 (/opt/ros/humble/share/rclcpp_components/cmake)
+[10.309s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[10.428s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[10.679s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[11.106s] -- Found tf2: 0.25.2 (/opt/ros/humble/share/tf2/cmake)
+[11.167s] -- Found tf2_ros: 0.25.2 (/opt/ros/humble/share/tf2_ros/cmake)
+[12.422s] -- Found raspimouse_msgs: 1.1.1 (/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/share/raspimouse_msgs/cmake)
+[12.531s] -- Found ros_ign_gazebo: 0.244.11 (/opt/ros/humble/share/ros_ign_gazebo/cmake)
+[14.960s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[15.473s] -- Added test 'copyright' to check source files copyright and LICENSE
+[15.489s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[15.491s] -- Configured cppcheck include dirs: /home/arthike/workspaces/pimouse_start/src/raspimouse/include
+[15.491s] -- Configured cppcheck exclude dirs and/or files: 
+[15.513s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[15.514s] -- Configured cpplint exclude dirs and/or files: 
+[15.518s] -- Added test 'flake8' to check Python code syntax and style conventions
+[15.536s] -- Added test 'lint_cmake' to check CMake code style
+[15.545s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[15.582s] -- Added test 'uncrustify' to check C / C++ code style
+[15.584s] -- Configured uncrustify additional arguments: 
+[15.589s] -- Added test 'xmllint' to check XML markup files
+[15.627s] -- Configuring done
+[15.820s] -- Generating done
+[15.830s] -- Build files have been written to: /home/arthike/workspaces/pimouse_start/src/build/raspimouse
+[15.920s] Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse' returned '0': AMENT_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:/home/arthike/workspaces/pimouse_start/install/raspimouse:/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/arthike/workspaces/pimouse_start/src/raspimouse -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/arthike/workspaces/pimouse_start/src/install/raspimouse
+[15.923s] Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse': AMENT_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:/home/arthike/workspaces/pimouse_start/install/raspimouse:/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/arthike/workspaces/pimouse_start/src/build/raspimouse -- -j7 -l7
+[16.441s] [ 16%] [32mBuilding CXX object CMakeFiles/keyboard_controller.dir/src/keyboard_controller.cpp.o[0m
+[16.458s] [ 33%] [32mBuilding CXX object CMakeFiles/raspimouse_component.dir/src/raspimouse_component.cpp.o[0m
+[45.807s] [ 50%] [32m[1mLinking CXX executable keyboard_controller[0m
+[46.915s] [ 50%] Built target keyboard_controller
+[122.236s] [ 66%] [32m[1mLinking CXX shared library libraspimouse_component.so[0m
+[124.718s] [ 66%] Built target raspimouse_component
+[124.874s] [ 83%] [32mBuilding CXX object CMakeFiles/raspimouse.dir/src/raspimouse.cpp.o[0m
+[142.239s] [100%] [32m[1mLinking CXX executable raspimouse[0m
+[143.401s] [100%] Built target raspimouse
+[143.532s] Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse' returned '0': AMENT_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:/home/arthike/workspaces/pimouse_start/install/raspimouse:/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/arthike/workspaces/pimouse_start/src/build/raspimouse -- -j7 -l7
+[143.953s] Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse': AMENT_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:/home/arthike/workspaces/pimouse_start/install/raspimouse:/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/arthike/workspaces/pimouse_start/src/build/raspimouse
+[144.015s] -- Install configuration: "RelWithDebInfo"
+[144.020s] -- Execute custom install script
+[144.023s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/environment/library_path.sh
+[144.100s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/environment/library_path.dsv
+[144.213s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/include/raspimouse/raspimouse_component.hpp
+[144.274s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse//launch/raspimouse.launch.py
+[144.316s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse//config/params.yaml
+[144.374s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse//worlds/test_world.sdf
+[144.461s] -- Up-to-date symlink: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse//config/params.yaml
+[144.463s] -- Up-to-date symlink: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse//config/params.yaml
+[144.468s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/lib/raspimouse/raspimouse
+[144.498s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/lib/raspimouse/keyboard_controller
+[144.609s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/ament_index/resource_index/package_run_dependencies/raspimouse
+[144.691s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/ament_index/resource_index/parent_prefix_path/raspimouse
+[144.770s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/environment/ament_prefix_path.sh
+[144.866s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/environment/ament_prefix_path.dsv
+[144.946s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/environment/path.sh
+[144.997s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/environment/path.dsv
+[145.069s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/local_setup.bash
+[145.135s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/local_setup.sh
+[145.213s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/local_setup.zsh
+[145.256s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/local_setup.dsv
+[145.300s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.dsv
+[145.365s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/ament_index/resource_index/packages/raspimouse
+[145.447s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/ament_index/resource_index/rclcpp_components/raspimouse
+[145.506s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/cmake/ament_cmake_export_targets-extras.cmake
+[145.568s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/cmake/ament_cmake_export_dependencies-extras.cmake
+[145.670s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/cmake/ament_cmake_export_include_directories-extras.cmake
+[145.728s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/cmake/ament_cmake_export_libraries-extras.cmake
+[145.790s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/cmake/raspimouseConfig.cmake
+[145.877s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/cmake/raspimouseConfig-version.cmake
+[145.957s] -- Symlinking: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/package.xml
+[146.009s] -- Installing: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/lib/libraspimouse_component.so
+[146.394s] -- Set runtime path of "/home/arthike/workspaces/pimouse_start/src/install/raspimouse/lib/libraspimouse_component.so" to ""
+[146.395s] -- Installing: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/bin/keyboard_controller
+[146.436s] -- Set runtime path of "/home/arthike/workspaces/pimouse_start/src/install/raspimouse/bin/keyboard_controller" to ""
+[146.437s] -- Installing: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/cmake/export_raspimouse_componentExport.cmake
+[146.440s] -- Installing: /home/arthike/workspaces/pimouse_start/src/install/raspimouse/share/raspimouse/cmake/export_raspimouse_componentExport-relwithdebinfo.cmake
+[146.461s] Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse' returned '0': AMENT_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs:/home/arthike/workspaces/pimouse_start/install/raspimouse:/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/arthike/workspaces/pimouse_start/src/build/raspimouse

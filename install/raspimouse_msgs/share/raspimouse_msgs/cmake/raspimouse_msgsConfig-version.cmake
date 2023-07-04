@@ -1,0 +1,1 @@
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse_msgs/ament_cmake_core/raspimouse_msgsConfig-version.cmake

@@ -1,0 +1,41 @@
+[0.097s] Invoking command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description': /usr/bin/cmake /home/arthike/workspaces/pimouse_start/src/raspimouse_description -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description
+[0.147s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.149s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.149s]   CMake.
+[0.149s] 
+[0.150s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.150s]   CMake that the project does not need compatibility with older versions.
+[0.150s] 
+[0.151s] [0m
+[0.729s] -- The C compiler identification is GNU 11.3.0
+[1.460s] -- The CXX compiler identification is GNU 11.3.0
+[1.537s] -- Detecting C compiler ABI info
+[2.274s] -- Detecting C compiler ABI info - done
+[2.305s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.306s] -- Detecting C compile features
+[2.308s] -- Detecting C compile features - done
+[2.327s] -- Detecting CXX compiler ABI info
+[2.899s] -- Detecting CXX compiler ABI info - done
+[2.933s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.933s] -- Detecting CXX compile features
+[2.934s] -- Detecting CXX compile features - done
+[2.988s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[2.991s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[2.992s]   asked CMake to find a package configuration file provided by "catkin", but
+[2.993s]   CMake did not find one.
+[2.995s] 
+[2.996s]   Could not find a package configuration file provided by "catkin" with any
+[2.997s]   of the following names:
+[2.998s] 
+[2.998s]     catkinConfig.cmake
+[2.999s]     catkin-config.cmake
+[2.999s] 
+[2.999s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[3.001s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[3.001s]   provides a separate development package or SDK, be sure it has been
+[3.001s]   installed.
+[3.003s] 
+[3.004s] [0m
+[3.004s] -- Configuring incomplete, errors occurred!
+[3.005s] See also "/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description/CMakeFiles/CMakeOutput.log".
+[3.012s] Invoked command in '/home/arthike/workspaces/pimouse_start/src/build/raspimouse_description' returned '1': /usr/bin/cmake /home/arthike/workspaces/pimouse_start/src/raspimouse_description -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/arthike/workspaces/pimouse_start/src/install/raspimouse_description

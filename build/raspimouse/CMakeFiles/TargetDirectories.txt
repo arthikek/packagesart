@@ -1,0 +1,12 @@
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/uninstall.dir
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/raspimouse_uninstall.dir
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/keyboard_controller.dir
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/raspimouse_component.dir
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/raspimouse.dir
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/test.dir
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/edit_cache.dir
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/rebuild_cache.dir
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/list_install_components.dir
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/install.dir
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/install/local.dir
+/home/arthike/workspaces/pimouse_start/src/build/raspimouse/CMakeFiles/install/strip.dir
