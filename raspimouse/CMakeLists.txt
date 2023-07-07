@@ -15,6 +15,7 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_lifecycle REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
@@ -22,15 +23,15 @@ find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(raspimouse_msgs REQUIRED)
 find_package(ros_ign_gazebo REQUIRED)
+find_package(PCL REQUIRED)
 
 include_directories(include)
 
 # Add the executable target
-add_executable(keyboard_controller src/keyboard_controller.cpp)
-ament_target_dependencies(keyboard_controller
- rclcpp geometry_msgs)
+
 
 add_library(raspimouse_component SHARED src/raspimouse_component.cpp)
+
 target_compile_definitions(raspimouse_component PRIVATE "RASPIMOUSE_BUILDING_DLL")
 ament_target_dependencies(raspimouse_component
   rclcpp
@@ -43,10 +44,16 @@ ament_target_dependencies(raspimouse_component
   tf2
   tf2_ros
   raspimouse_msgs)
+
 rclcpp_components_register_nodes(raspimouse_component "raspimouse::Raspimouse")
 
 add_executable(raspimouse src/raspimouse.cpp)
 target_link_libraries(raspimouse raspimouse_component)
+add_executable(self_drive src/self_drive.cpp)
+ament_target_dependencies(self_drive
+ rclcpp geometry_msgs sensor_msgs)
+ target_link_libraries(raspimouse ${PCL_LIBRARIES})
+
 ament_target_dependencies(raspimouse
   rclcpp
   rclcpp_lifecycle
@@ -59,22 +66,6 @@ ament_target_dependencies(raspimouse
   tf2_ros
   raspimouse_msgs)
 
-
-  
-ament_export_targets(export_raspimouse_component HAS_LIBRARY_TARGET)
-
-ament_export_dependencies(rosidl_default_runtime)
-ament_export_dependencies(rclcpp)
-ament_export_dependencies(rclcpp_lifecycle)
-ament_export_dependencies(rclcpp_components)
-ament_export_dependencies(std_msgs)
-ament_export_dependencies(std_srvs)
-ament_export_dependencies(geometry_msgs)
-ament_export_dependencies(nav_msgs)
-ament_export_dependencies(tf2)
-ament_export_dependencies(tf2_ros)
-ament_export_dependencies(raspimouse_msgs)
-
 ament_export_include_directories(include)
 ament_export_libraries(raspimouse_component)
 
@@ -83,23 +74,13 @@ install(
   DESTINATION include
 )
 
-install(DIRECTORY launch  config DESTINATION share/${PROJECT_NAME}/)
-install(DIRECTORY worlds  config DESTINATION share/${PROJECT_NAME}/)
-install(DIRECTORY models  config DESTINATION share/${PROJECT_NAME}/)
+install(DIRECTORY launch config DESTINATION share/${PROJECT_NAME}/)
+install(DIRECTORY worlds models DESTINATION share/${PROJECT_NAME}/)
 
 install(
   TARGETS 
   raspimouse_component 
-  keyboard_controller
-
-  EXPORT export_raspimouse_component
-  ARCHIVE DESTINATION lib
-  LIBRARY DESTINATION lib
-  RUNTIME DESTINATION bin
-  INCLUDES DESTINATION include)
-install(TARGETS
-  raspimouse
-  keyboard_controller
+  self_drive
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
