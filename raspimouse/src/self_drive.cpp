@@ -29,32 +29,31 @@ private:
     publisher_->publish(message);
   }
 geometry_msgs::msg::Twist calculateVelMsg(float distance) {
-  static int stuck_counter = 0;  // Counter to track how often we're stuck
+  static int stuck_counter = 0;  
   auto msg = geometry_msgs::msg::Twist();
   RCLCPP_INFO(this->get_logger(), "Distance is: '%f'", distance);
   if (distance < 0.2) {
     if (distance < 0.1) {
-      msg.linear.x = 2;  // Stop moving forward
-      msg.angular.z = 0.5;  // Continue turning with a lower angular speed
+      msg.linear.x = 2; 
+      msg.angular.z = 0.5;  
       stuck_counter++;
-      if (stuck_counter > 1) {  // We've been stuck for a while
+      if (stuck_counter > 1) {  
         msg.angular.z = 1;        
-        msg.linear.x = 1; // Turn faster
-        if (stuck_counter > 2) {  // We're really stuck!
+        msg.linear.x = 1; 
+        if (stuck_counter > 2) {  
           stuck_counter = 0; 
-           msg.linear.x = 2; // Reset the counter and hope for the best
+           msg.linear.x = 2; 
            msg.angular.z = 2; 
         }
       }
     } else {
       msg.linear.x = 0;
-      msg.angular.z = 1;  // Start turning with a higher angular speed
-      stuck_counter = 0;  // We're not really stuck yet, so reset the counter
+      msg.angular.z = 1;  
+      stuck_counter = 0;  
     }
   } else {
     msg.linear.x = 1;
-    msg.angular.z = 0;
-    stuck_counter = 0;  // We're not stuck, so reset the counter
+    msg.angular.z = 0;// We're not stuck, so reset the counter
   }
   return msg;
 }
