@@ -4,6 +4,7 @@
 #include "sensor_msgs/point_cloud2_iterator.hpp" // Iterators
 
 using std::placeholders::_1;
+constexpr double PI = 3.141592653589793;
 
 class ObstacleAvoidance : public rclcpp::Node {
 public:
@@ -16,47 +17,50 @@ public:
   }
 
 private:
+ private:
   void topic_callback(const sensor_msgs::msg::PointCloud2::SharedPtr _msg) {
     float min = 10;
+    float angle = 0;
     for (sensor_msgs::PointCloud2ConstIterator<float> iter_x(*_msg, "x"), iter_y(*_msg, "y"); 
          iter_x != iter_x.end(); ++iter_x, ++iter_y) {
       float distance = std::sqrt(std::pow(*iter_x, 2) + std::pow(*iter_y, 2));
       if (distance < min) {
         min = distance;
+        angle = std::atan2(*iter_y, *iter_x);  // calculate the angle
       }
     }
-    auto message = this->calculateVelMsg(min);
+ 
+    auto message = this->calculateVelMsg(min, angle);
     publisher_->publish(message);
   }
-geometry_msgs::msg::Twist calculateVelMsg(float distance) {
-  static int stuck_counter = 0;  
+
+
+
+geometry_msgs::msg::Twist calculateVelMsg(float min_distance, float angle) {
   auto msg = geometry_msgs::msg::Twist();
-  RCLCPP_INFO(this->get_logger(), "Distance is: '%f'", distance);
-  if (distance < 0.2) {
-    if (distance < 0.1) {
-      msg.linear.x = 2; 
-      msg.angular.z = 0.5;  
-      stuck_counter++;
-      if (stuck_counter > 1) {  
-        msg.angular.z = 1;        
-        msg.linear.x = 1; 
-        if (stuck_counter > 2) {  
-          stuck_counter = 0; 
-           msg.linear.x = 2; 
-           msg.angular.z = 2; 
-        }
+
+  if (min_distance < 0.2) { // This is your distance threshold
+    if (angle > -PI/1.5 && angle < PI/1.5) {
+      msg.angular.z = 1; // Rotate if the obstacle is in front or at the sides
+
+      // Check if the car's back is facing the wall and it's rotating slowly
+      if (min_distance < 0.1 && angle > -PI && angle < PI && angle < -PI/2 && angle > PI/2 )  {
+        msg.linear.x = 1; // Move briefly forward to free itself from the wall
       }
     } else {
-      msg.linear.x = 0;
-      msg.angular.z = 1;  
-      stuck_counter = 0;  
+      msg.linear.x = 1; // Move forwards if the obstacle is at the back
     }
   } else {
-    msg.linear.x = 1;
-    msg.angular.z = 0;// We're not stuck, so reset the counter
+    msg.linear.x = 1; // Move forward
+    msg.angular.z = 0; // Stop turning
   }
+
   return msg;
 }
+
+
+
+
 
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;
