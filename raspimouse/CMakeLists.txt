@@ -24,12 +24,12 @@ find_package(tf2_ros REQUIRED)
 find_package(raspimouse_msgs REQUIRED)
 find_package(ros_ign_gazebo REQUIRED)
 find_package(PCL REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(OpenCV REQUIRED)
 
 include_directories(include)
 
 # Add the executable target
-
-
 add_library(raspimouse_component SHARED src/raspimouse_component.cpp)
 
 target_compile_definitions(raspimouse_component PRIVATE "RASPIMOUSE_BUILDING_DLL")
@@ -47,15 +47,23 @@ ament_target_dependencies(raspimouse_component
 
 rclcpp_components_register_nodes(raspimouse_component "raspimouse::Raspimouse")
 
+add_executable(self_drive_camera src/self_drive_camera.cpp)
+ament_target_dependencies(self_drive_camera
+  rclcpp
+  sensor_msgs
+  cv_bridge)
+target_link_libraries(self_drive_camera ${OpenCV_LIBRARIES})
+
 add_executable(raspimouse src/raspimouse.cpp)
 target_link_libraries(raspimouse raspimouse_component)
+
 add_executable(self_drive src/self_drive.cpp)
 ament_target_dependencies(self_drive
  rclcpp geometry_msgs sensor_msgs)
- target_link_libraries(raspimouse ${PCL_LIBRARIES})
+target_link_libraries(raspimouse ${PCL_LIBRARIES})
 
-ament_target_dependencies(raspimouse
-  rclcpp
+ament_target_dependencies(
+  raspimouse
   rclcpp_lifecycle
   class_loader
   std_msgs
@@ -81,6 +89,7 @@ install(
   TARGETS 
   raspimouse_component 
   self_drive
+  self_drive_camera
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

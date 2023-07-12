@@ -13,6 +13,8 @@
   <author email="git@killbots.net">Geoffrey Biggs</author>
 
   <depend>ros_ign_gazebo</depend>
+  <depend>cv_bridge</depend>
+  <depend>opencv2</depend>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
