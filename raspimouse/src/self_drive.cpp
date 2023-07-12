@@ -30,7 +30,7 @@ private:
       }
     }
  
-    auto message = this->calculateVelMsg(min, angle);
+    auto message = calculateVelMsg(min, angle);
     publisher_->publish(message);
   }
 
@@ -39,20 +39,20 @@ private:
 geometry_msgs::msg::Twist calculateVelMsg(float min_distance, float angle) {
   auto msg = geometry_msgs::msg::Twist();
 
-  if (min_distance < 0.2) { // This is your distance threshold
+  if (min_distance < 0.2) {
     if (angle > -PI/1.5 && angle < PI/1.5) {
-      msg.angular.z = 1; // Rotate if the obstacle is in front or at the sides
+      msg.angular.z = 1; 
 
-      // Check if the car's back is facing the wall and it's rotating slowly
+      
       if (min_distance < 0.1 && angle > -PI && angle < PI && angle < -PI/2 && angle > PI/2 )  {
-        msg.linear.x = 1; // Move briefly forward to free itself from the wall
+        msg.linear.x = 1; 
       }
     } else {
-      msg.linear.x = 1; // Move forwards if the obstacle is at the back
+      msg.linear.x = 1; 
     }
   } else {
-    msg.linear.x = 1; // Move forward
-    msg.angular.z = 0; // Stop turning
+    msg.linear.x = 1; 
+    msg.angular.z = 0; 
   }
 
   return msg;

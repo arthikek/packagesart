@@ -18,23 +18,11 @@ public:
 // define callback function to be called when a message is received
 // this calback function publishes the distance to the closest obstacle
 private:
-  void topic_callback(const sensor_msgs::msg::PointCloud2::SharedPtr _msg) {
-    float min = getInitialMinValue();
-    for (sensor_msgs::PointCloud2ConstIterator<float> iter_x(*_msg, "x"),
-                                                     iter_y(*_msg, "y");
-         iter_x != iter_x.end(); ++iter_x, ++iter_y) {
-      float distance = std::sqrt(std::pow(*iter_x, 2) + std::pow(*iter_y, 2));
-      if (distance < min) {
-        min = distance;
-      }
-    }
-    auto message = this->calculateVelMsg(min);
-    publisher_->publish(message);
-  }
+  virtual void topic_callback(const sensor_msgs::msg::PointCloud2::SharedPtr _msg) =  0; 
 // define pure virtual function to be implemented by derived classes
   virtual geometry_msgs::msg::Twist calculateVelMsg(float distance) = 0;
   virtual float getInitialMinValue() = 0; // <-- New virtual method
-protected:
+
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr subscription_;
 };
