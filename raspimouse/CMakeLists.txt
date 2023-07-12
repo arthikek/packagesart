@@ -85,11 +85,20 @@ install(
 install(DIRECTORY launch config DESTINATION share/${PROJECT_NAME}/)
 install(DIRECTORY worlds models DESTINATION share/${PROJECT_NAME}/)
 
+add_executable(fusionnode src/fusionnode.cpp) # add this line to create an executable for fusionnode.cpp
+ament_target_dependencies(fusionnode
+  rclcpp
+  geometry_msgs
+  sensor_msgs
+  message_filters)  # add this line to specify the dependencies for fusionnode
+target_link_libraries(fusionnode ${PCL_LIBRARIES} ${OpenCV_LIBRARIES}) # link the required libraries
+
 install(
   TARGETS 
   raspimouse_component 
   self_drive
   self_drive_camera
+  fusionnode
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
