@@ -83,7 +83,7 @@ install(
 )
 
 install(DIRECTORY launch config DESTINATION share/${PROJECT_NAME}/)
-install(DIRECTORY worlds models DESTINATION share/${PROJECT_NAME}/)
+# install(DIRECTORY worlds models DESTINATION share/${PROJECT_NAME}/)
 
 add_executable(fusionnode src/fusionnode.cpp) # add this line to create an executable for fusionnode.cpp
 ament_target_dependencies(fusionnode
