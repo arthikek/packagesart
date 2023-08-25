@@ -174,14 +174,19 @@ namespace racing_bot
       setPWM(pwmPin[motor_id], 0, speed * 16);
     }
 
-    void HatNode::i2cSetup()
+   void HatNode::i2cSetup()
+{
+    i2c_handle_ = i2c_open(pi_handle_, 1, HAT_ADDR, 0);
+    if (i2c_handle_ == -1)
     {
-      i2c_handle_ = i2c_open(pi_handle_, 1, HAT_ADDR, 0);
-      if (i2c_handle_ == -1)
-      {
         std::cout << "Failed to open I2C." << std::endl;
-      }
     }
+    else
+    {
+        std::cout << "Successfully opened I2C connection with handle: " << i2c_handle_ << std::endl;
+    }
+}
+
 
     void HatNode::setAllPWM(int on_value, int off_value)
     {
