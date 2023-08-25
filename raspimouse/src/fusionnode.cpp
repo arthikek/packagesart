@@ -3,10 +3,24 @@
 #include "sensor_msgs/msg/point_cloud2.hpp"
 #include "sensor_msgs/point_cloud2_iterator.hpp"
 #include "sensor_msgs/msg/compressed_image.hpp"
+// "message_filters/subscriber.h" includes the definition of the "Subscriber" class
+// from the "message_filters" library. This class provides advanced topic
+// subscription functionalities, like synchronizing messages from different topics.
 #include "message_filters/subscriber.h"
+
+// "message_filters/sync_policies/approximate_time.h" includes the definition
+// of the "ApproximateTime" synchronization policy. This policy is used to
+// synchronize messages from different topics that are not perfectly 
+// synchronized, but have close enough timestamps.
 #include "message_filters/sync_policies/approximate_time.h"
 
-using ApproximateTimePolicy = message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::PointCloud2, sensor_msgs::msg::CompressedImage>;
+// Define a type alias "ApproximateTimePolicy" for an ApproximateTime 
+// synchronization policy that works with PointCloud2 and CompressedImage 
+// messages. It will be used to ensure that for each pair of PointCloud2 and 
+// CompressedImage messages processed, their timestamps are as close as 
+// possible, even if they aren't exactly the same. This is useful when you want
+// to process data from different sensors that may not be perfectly synchronized.
+typedef  message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::PointCloud2, sensor_msgs::msg::CompressedImage> ApproximateTimePolicy;
 
 class BaseNode : public rclcpp::Node {
 public:
