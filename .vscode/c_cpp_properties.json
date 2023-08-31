@@ -1,23 +1,24 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "${default}",
-        "limitSymbolsToIncludedHeaders": false
-      },
-      "includePath": [
-        "/home/arthike/workspaces/pimouse_start/install/raspimouse/include/**",
-        "/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs/include/**",
-        "/opt/ros/humble/include/**",
-        "/home/arthike/workspaces/pimouse_start/src/raspimouse/include/**",
-        "/usr/include/**"
-      ],
-      "name": "ROS",
-      "intelliSenseMode": "gcc-x64",
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "gnu11",
-      "cppStandard": "c++14"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/arthike/workspaces/pimouse_start/install/raspimouse/include/**",
+                "/home/arthike/workspaces/pimouse_start/install/raspimouse_msgs/include/**",
+                "/opt/ros/humble/include/**",
+                "/home/arthike/workspaces/pimouse_start/src/raspimouse/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/raspimouse/include/raspimouse"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
 }
