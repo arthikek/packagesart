@@ -42,8 +42,7 @@ void lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr scan) override
             twist_msg.angular.z = 0.0;
         }
 
-    // Publish a twist message based on the LaserScan data.
-    auto twist_msg = geometry_msgs::msg::Twist();
+  
     
     if (min_distance < 0.5) // if obstacle is closer than 0.5m
     {
