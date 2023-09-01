@@ -38,7 +38,7 @@ BaseNode::BaseNode()
     : Node("base_node"),
       publisher_(create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10)),
       lidar_subscription_(create_subscription<sensor_msgs::msg::LaserScan>(
-          "gazebo_ros_laser_controller/out",
+          "/scan",
           rclcpp::QoS(rclcpp::SystemDefaultsQoS()),
           std::bind(&BaseNode::lidar_callback, this, std::placeholders::_1))),
       camera_subscription_(create_subscription<sensor_msgs::msg::CompressedImage>(
