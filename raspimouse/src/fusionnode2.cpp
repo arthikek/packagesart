@@ -1,23 +1,6 @@
 #include "AI_API.hpp" // Include the header file with the class declarations
 
 // Constructor implementation for BaseNode
-BaseNode::BaseNode()
-    : Node("base_node"),
-      publisher_(create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10)),
-      lidar_subscription_(create_subscription<sensor_msgs::msg::PointCloud2>(
-          "gazebo_ros_laser_controller/out",
-          rclcpp::QoS(rclcpp::SystemDefaultsQoS()),
-          std::bind(&BaseNode::lidar_callback, this, std::placeholders::_1))),
-      camera_subscription_(create_subscription<sensor_msgs::msg::CompressedImage>(
-          "/camera/image_raw/compressed",
-          rclcpp::QoS(rclcpp::SystemDefaultsQoS()),
-          std::bind(&BaseNode::camera_callback, this, std::placeholders::_1)))
-{
-    lidar_sub_ = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::PointCloud2>>(this, "gazebo_ros_laser_controller/out");
-    camera_sub_ = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::CompressedImage>>(this, "/camera/image_raw/compressed");
-    ts_ = std::make_shared<message_filters::Synchronizer<ApproximateTimePolicy>>(ApproximateTimePolicy(10), *lidar_sub_, *camera_sub_);
-    ts_->registerCallback(&BaseNode::sensor_callback, this);
-}
 
 // DerivedNode class that inherits from BaseNode
 class DerivedNode : public BaseNode
