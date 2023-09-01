@@ -2,3 +2,5 @@
 	url = https://github.com/pullipaal/raspimouse_description.git
 [submodule "message_filters"]
 	url = https://github.com/ros2/message_filters.git
+[submodule "rplidar_ros2"]
+	url = https://github.com/babakhani/rplidar_ros2.git
