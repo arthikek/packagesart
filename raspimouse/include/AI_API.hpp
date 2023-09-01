@@ -30,12 +30,6 @@ protected:
   std::shared_ptr<message_filters::Synchronizer<ApproximateTimePolicy>> ts_;
 };
 
-class DerivedNode : public BaseNode {
-public:
-  DerivedNode();
-  void lidar_callback(const sensor_msgs::msg::PointCloud2::SharedPtr point_cloud) override;
-  void camera_callback(const sensor_msgs::msg::CompressedImage::SharedPtr image) override;
-  void sensor_callback(const sensor_msgs::msg::PointCloud2::SharedPtr& point_cloud, const sensor_msgs::msg::CompressedImage::SharedPtr& image) override;
-};
+
 
 #endif  // BASE_NODE_HPP_

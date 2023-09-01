@@ -102,7 +102,7 @@ install(
   raspimouse_component 
   self_drive
   self_drive_camera
-  fusionnode
+  
   fusionnode2
   DESTINATION lib/${PROJECT_NAME})
 

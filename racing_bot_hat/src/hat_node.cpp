@@ -42,15 +42,16 @@ namespace racing_bot
 
       pi_handle_ = pigpio_start(NULL, NULL);
       i2cSetup();
-      
+     
       setAllPWM(0, 0);
       configureModeRegisters();
       disableSleepMode();
-      
     }
 
-  
+
+
 }
+
 
     void HatNode::configureModeRegisters()
     {
@@ -179,19 +180,14 @@ namespace racing_bot
       setPWM(pwmPin[motor_id], 0, speed * 16);
     }
 
-   void HatNode::i2cSetup()
-{
-    i2c_handle_ = i2c_open(pi_handle_, 1, HAT_ADDR, 0);
-    if (i2c_handle_ == -1)
+    void HatNode::i2cSetup()
     {
+      i2c_handle_ = i2c_open(pi_handle_, 1, HAT_ADDR, 0);
+      if (i2c_handle_ == -1)
+      {
         std::cout << "Failed to open I2C." << std::endl;
+      }
     }
-    else
-    {
-        std::cout << "Successfully opened I2C connection with handle: " << i2c_handle_ << std::endl;
-    }
-}
-
 
     void HatNode::setAllPWM(int on_value, int off_value)
     {
@@ -201,4 +197,3 @@ namespace racing_bot
       i2c_write_byte_data(pi_handle_, i2c_handle_, ALL_LED_OFF_H, off_value >> 8);
     }
   }
-}
