@@ -42,7 +42,7 @@ namespace racing_bot
 
       pi_handle_ = pigpio_start(NULL, NULL);
       i2cSetup();
-       testAllPins()
+      
       setAllPWM(0, 0);
       configureModeRegisters();
       disableSleepMode();
