@@ -1,4 +1,4 @@
-l#ifndef HATCONSTANTS_H
+#ifndef HATCONSTANTS_H
 #define HATCONSTANTS_H
 
 #include <string>

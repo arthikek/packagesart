@@ -42,11 +42,7 @@ namespace racing_bot
 
       pi_handle_ = pigpio_start(NULL, NULL);
       i2cSetup();
-<<<<<<< HEAD
-     
-=======
       
->>>>>>> master
       setAllPWM(0, 0);
       configureModeRegisters();
       disableSleepMode();
@@ -54,7 +50,7 @@ namespace racing_bot
 
 
 
-}
+
 
 
     void HatNode::configureModeRegisters()
@@ -201,3 +197,5 @@ namespace racing_bot
       i2c_write_byte_data(pi_handle_, i2c_handle_, ALL_LED_OFF_H, off_value >> 8);
     }
   }
+
+}
