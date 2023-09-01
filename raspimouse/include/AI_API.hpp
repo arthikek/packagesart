@@ -8,6 +8,7 @@
 #include "sensor_msgs/msg/compressed_image.hpp"
 #include "message_filters/subscriber.h"
 #include "message_filters/sync_policies/approximate_time.h"
+#include "sensor_msgs/msg/laser_scan.hpp"
 
 typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::LaserScan, sensor_msgs::msg::CompressedImage> ApproximateTimePolicy;
 
