@@ -57,10 +57,14 @@ target_link_libraries(self_drive_camera ${OpenCV_LIBRARIES})
 add_executable(raspimouse src/raspimouse.cpp)
 target_link_libraries(raspimouse raspimouse_component)
 
+
 add_executable(self_drive src/self_drive.cpp)
 ament_target_dependencies(self_drive
  rclcpp geometry_msgs sensor_msgs)
 target_link_libraries(raspimouse ${PCL_LIBRARIES})
+
+
+
 
 ament_target_dependencies(
   raspimouse
@@ -85,20 +89,21 @@ install(
 install(DIRECTORY launch config DESTINATION share/${PROJECT_NAME}/)
 # install(DIRECTORY worlds models DESTINATION share/${PROJECT_NAME}/)
 
-add_executable(fusionnode src/fusionnode.cpp) # add this line to create an executable for fusionnode.cpp
-ament_target_dependencies(fusionnode
+add_executable(fusionnode2 src/fusionnode2.cpp) # add this line to create an executable for fusionnode.cpp
+ament_target_dependencies(fusionnode2
   rclcpp
   geometry_msgs
   sensor_msgs
   message_filters)  # add this line to specify the dependencies for fusionnode
-target_link_libraries(fusionnode ${PCL_LIBRARIES} ${OpenCV_LIBRARIES}) # link the required libraries
+target_link_libraries(fusionnode2 ${PCL_LIBRARIES} ${OpenCV_LIBRARIES}) # link the required libraries
 
 install(
   TARGETS 
   raspimouse_component 
   self_drive
   self_drive_camera
-  fusionnode
+  
+  fusionnode2
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
