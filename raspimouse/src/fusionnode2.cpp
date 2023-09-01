@@ -9,7 +9,7 @@ public:
     DerivedNode() : BaseNode() {}
 
     // Existing implementation for lidar_callback
-    void lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr point_cloud) override
+    void lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr scan) override
     {
 
        float min_distance = std::numeric_limits<float>::max();
@@ -54,7 +54,7 @@ public:
     {
         RCLCPP_INFO(this->get_logger(), "Received synchronized lidar and image data");
 
-        uint32_t num_points = point_cloud->width * point_cloud->height;
+        uint32_t num_points = point_cloud->ranges.size();
         RCLCPP_INFO(this->get_logger(), "Number of points in the point cloud: %u", num_points);
 
         auto format = image->format;    // MIME type
