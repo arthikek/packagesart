@@ -26,7 +26,7 @@ public:
         // Publish a twist message based on the LaserScan data.
         auto twist_msg = geometry_msgs::msg::Twist();
         
-        if (min_distance < 0.5) // if obstacle is closer than 0.5m
+        if (min_distance < 0.2) // if obstacle is closer than 0.5m
         {
             // Stop the robot
             twist_msg.linear.x = 0.0;
@@ -35,7 +35,7 @@ public:
         else
         {
             // Move the robot forward
-            twist_msg.linear.x = 0.5;
+            twist_msg.linear.x = 0.2;
             twist_msg.angular.z = 0.0;
         }
 
