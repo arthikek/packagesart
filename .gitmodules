@@ -4,3 +4,5 @@
 	url = https://github.com/ros2/message_filters.git
 [submodule "rplidar_ros2"]
 	url = https://github.com/babakhani/rplidar_ros2.git
+[submodule "realsense-ros"]
+	url = https://github.com/IntelRealSense/realsense-ros.git
