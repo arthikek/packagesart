@@ -36,4 +36,10 @@ def generate_launch_description():
             name='realsense2_camera_node',
             output='screen'
         ),
+          Node(
+            package='raspimouse',
+            executable='fusionnode2',
+            name='fusionnode2',
+            output='screen'
+        ),
     ])
