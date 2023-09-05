@@ -36,6 +36,7 @@ void lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr scan) override
             twist_msg.angular.z = 0.0;
         }
         else
+        
         {
             // Move the robot forward
             twist_msg.linear.x = 0.2;
